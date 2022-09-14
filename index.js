@@ -43,6 +43,15 @@ async function run() {
             console.log(`${id} is deleted`);
 
         })
+        // update coupon
+        app.put('/coupon/:id', async (req, res) => {
+            const id = req.params.id;
+            const updateData = req.body;
+            const query = { _id: ObjectId(id) };
+            const result = await couponCollection.updateMany(query, { $set: updateData });
+            res.send(result);
+            console.log(`${id} is updated`);
+        })
 
         app.get('/', (req, res) => {
             res.send({ result: 'Done' })
