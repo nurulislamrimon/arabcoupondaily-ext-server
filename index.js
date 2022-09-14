@@ -23,7 +23,7 @@ async function run() {
         // get all coupon
         app.get('/coupons', async (req, res) => {
             const query = {};
-            const result = await couponCollection.find(query).toArray();
+            const result = await couponCollection.find(query).sort({ _id: -1 }).toArray();
             res.send(result);
             console.log('all coupons response');
         });
