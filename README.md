@@ -1,4 +1,4 @@
-## This site is made for managing an extension
+## This site is made for managing a Google Chrome Extension
 ### Go to the site using [link](https://arabcoupondaily-ext.web.app/)
 
 Live site link:
@@ -10,3 +10,5 @@ Server link:
 * https://arabcoupondaily-ext.onrender.com
 
 Client github link: https://github.com/nurulislamrimon/arabcoupondaily-ext-client
+
+Main site: https://arabcoupondaily.com
